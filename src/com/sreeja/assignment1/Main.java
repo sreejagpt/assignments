@@ -157,7 +157,7 @@ public class Main {
         }
         for(int i = n - 1; i >= 1; i--) {
             System.out.println();
-            for(int j = i; j <= n-i; j++) {
+            for(int j = 1; j <= n-i; j++) {
                 System.out.print(" ");
             }
             for(int k = 1;k <= (2*i)-1; k++) {
@@ -184,10 +184,10 @@ public class Main {
                 System.out.print("*");
             }
         }
-        System.out.println("Sreeja");
+        System.out.print("\nSreeja");
         for(int i = n - 1; i >= 1; i--) {
             System.out.println();
-            for(int j = i; j <= n-i; j++) {
+            for(int j = 1; j <= n-i; j++) {
                 System.out.print(" ");
             }
             for(int k = 1;k <= (2*i)-1; k++) {
