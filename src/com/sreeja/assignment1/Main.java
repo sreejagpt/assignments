@@ -16,7 +16,7 @@ public class Main {
             "[6] Diamond (accepts 1 arg) \n" +
             "[7] Diamond with name (accepts 1 arg) \n" +
             "[8] FizzBuzz \n" +
-            "[9] Prime Factor generation ");
+            "[9] Prime Factor generation (accepts 1 arg)");
             System.exit(0);
         }
 
@@ -53,9 +53,12 @@ public class Main {
                 printDiamond(arg);
                 break;
             case 7:
-                fizzBuzz();
+                printDiamondWithName(arg);
                 break;
             case 8:
+                fizzBuzz();
+                break;
+            case 9:
                 generate(arg).forEach(System.out::println);
                 break;
             default:
@@ -65,7 +68,7 @@ public class Main {
     }
 
     private static boolean choiceRequiresArgument(int choice) {
-        return choice >= 2 && choice <= 7;
+        return (choice >= 2 && choice <= 7) || choice == 9;
     }
 
     /**
